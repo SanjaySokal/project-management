@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu {
+  margin: 0;
+  max-width: 250px;
+  border-right: 1px solid #DBDBDB;
+  height: 100vh;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu .logo {
+  padding: 20px;
+  height: 85px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-bottom: 1px solid #DBDBDB;
 }
 
-.App-link {
-  color: #61dafb;
+.menu .img {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu .img img {
+  width: 23px;
+}
+
+.menu .img span {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menu .logo .menu-close button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu .logo .menu-close button i {
+  opacity: 0.5;
+  font-size: 19px;
+}
+
+.menu .menu-links {
+  padding: 15px 10px;
+}
+
+.menu .menu-links .links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.menu .menu-links .links a.active,
+.menu .menu-links .links a:hover,
+.menu .menu-links .links a:focus {
+  background-color: #DBDBDB;
+}
+
+.menu .menu-links .links a img {
+  width: 23px;
+}
+
+.menu .menu-links .links a span {
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 13px;
+  color: #787486;
+  font-weight: 500;
+}
+
+.seperator-line {
+  background-color: #DBDBDB;
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
 }
