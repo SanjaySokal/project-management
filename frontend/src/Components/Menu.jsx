@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import img from "../images/logo image.png";
 import MenuLinks from './MenuLinks';
+import ProjectLinks from './ProjectLinks';
 
 const Menu = () => {
     return (
@@ -22,6 +23,11 @@ const Menu = () => {
             </div>
             <div className="seperator-line"></div>
             <div className="project-links">
+                <div className="heading">
+                    <span>My Projects</span>
+                    <button><i className="fa-solid fa-plus"></i></button>
+                </div>
+                <ProjectLinks />
             </div>
         </div>
     )

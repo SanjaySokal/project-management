@@ -9,7 +9,7 @@ import img5 from '../images/image-settings.png';
 const MenuLinks = () => {
     return (
         <div className='links'>
-            <Link className='active' to={""}>
+            <Link to={""}>
                 <img src={img} alt='' />
                 <span>Home</span>
             </Link>

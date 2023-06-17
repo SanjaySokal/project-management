@@ -8,7 +8,9 @@
   margin: 0;
   max-width: 250px;
   border-right: 1px solid #DBDBDB;
+  max-height: 100vh;
   height: 100vh;
+  min-height: 100vh;
   padding: 0;
 }
 
@@ -67,7 +69,7 @@
 .menu .menu-links .links a.active,
 .menu .menu-links .links a:hover,
 .menu .menu-links .links a:focus {
-  background-color: #DBDBDB;
+  background: rgba(80, 48, 229, 0.08);
 }
 
 .menu .menu-links .links a img {
@@ -87,4 +89,99 @@
   width: 90%;
   margin: 0 auto;
   height: 2px;
+}
+
+.menu .project-links {
+  padding: 15px 10px;
+}
+
+.menu .project-links .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu .project-links .heading span {
+  color: #787486;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu .project-links .heading button {
+  background-color: transparent;
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid #787486;
+  font-weight: 800;
+  border-radius: 5px;
+  color: #787486;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 8px;
+}
+
+.menu .project-links .links {
+  padding: 10px;
+}
+
+.menu .project-links .links a {
+  display: flex;
+  text-decoration: none;
+  color: #787486;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.menu .project-links .links a:hover,
+.menu .project-links .links a:focus,
+.menu .project-links .links a.active {
+  background: rgba(80, 48, 229, 0.08);
+  color: #000;
+}
+
+.menu .project-links .links a .name {
+  display: flex;
+  align-items: center;
+}
+
+.menu .project-links .links a .name .color {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.menu .project-links .links a .name span.color-1 {
+  background-color: #7AC555;
+}
+
+.menu .project-links .links a .name span.color-2 {
+  background-color: #FFA500;
+}
+
+.menu .project-links .links a .name span.color-3 {
+  background-color: #E4CCFD;
+}
+
+.menu .project-links .links a .name span.color-4 {
+  background-color: #76A5EA;
+}
+
+.menu .project-links .links a .name p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu .project-links .links a span.link {
+  display: inline-block;
 }
