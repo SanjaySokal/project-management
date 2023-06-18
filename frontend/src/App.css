@@ -8,9 +8,9 @@
   margin: 0;
   max-width: 250px;
   border-right: 1px solid #DBDBDB;
-  max-height: 100vh;
-  height: 100vh;
-  min-height: 100vh;
+  max-height: 100%;
+  height: 100%;
+  min-height: 100%;
   padding: 0;
 }
 
@@ -148,6 +148,20 @@
   color: #000;
 }
 
+
+.menu .project-links .links a:hover .name p,
+.menu .project-links .links a:focus .name p,
+.menu .project-links .links a.active .name p {
+  font-weight: 500;
+}
+
+.menu .project-links .links a:hover span.link,
+.menu .project-links .links a:focus span.link,
+.menu .project-links .links a.active span.link {
+  display: inline-block;
+}
+
+
 .menu .project-links .links a .name {
   display: flex;
   align-items: center;
@@ -183,5 +197,67 @@
 }
 
 .menu .project-links .links a span.link {
+  display: none;
+}
+
+.menu .thought {
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 50px 20px 50px 20px;
+  background: #f3f3f3;
+}
+
+.menu .thought .icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #f3f3f3;
   display: inline-block;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu .thought .icon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: radial-gradient(rgba(251, 203, 24, 0.3), rgba(251, 203, 24, 0.2), transparent, transparent);
+}
+
+.menu .thought .icon i {
+  font-size: 22px;
+  color: #FBCB18;
+}
+
+.menu .thought h4 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.menu .thought p {
+  font-size: 12px;
+  margin: 15px 0 15px 0;
+  color: #787486;
+}
+
+.menu .thought button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  padding: 10px 17px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.header {
+  flex: 0 0 calc(100% - 250px);
 }

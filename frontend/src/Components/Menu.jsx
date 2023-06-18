@@ -29,6 +29,16 @@ const Menu = () => {
                 </div>
                 <ProjectLinks />
             </div>
+            <div className='thought'>
+                <div className="icon">
+                    <i className="fa-solid fa-lightbulb"></i>
+                </div>
+                <h4>Thoughts Time</h4>
+                <p>
+                    We don’t have any notice for you, till then you can share your thoughts with your peers.
+                </p>
+                <button>Write a message</button>
+            </div>
         </div>
     )
 }
