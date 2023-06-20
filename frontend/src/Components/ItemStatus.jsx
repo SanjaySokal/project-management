@@ -3,8 +3,8 @@ import { Draggable } from 'react-beautiful-dnd'
 
 const ItemStatus = (props) => {
     return (
-        <Draggable>
-            {(provided) => {
+        <Draggable draggableId={props.id.toString()} index={props.id}>
+            {(provided) => (
                 <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
                     <div className="top-btns">
                         <p className={`priority ${props.priority}`}>
@@ -18,8 +18,9 @@ const ItemStatus = (props) => {
                             {props.para}
                         </p>
                     </div>
+                    {provided.placeholder}
                 </li>
-            }}
+            )}
         </Draggable>
     )
 }
