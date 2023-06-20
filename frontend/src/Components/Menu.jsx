@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import img from "../images/logo image.png";
 import MenuLinks from './MenuLinks';
 import ProjectLinks from './ProjectLinks';
 
@@ -9,8 +8,8 @@ const Menu = () => {
         <div className='menu'>
             <div className="logo">
                 <Link to={"/"} className="img">
-                    <img src={img} alt='logo' />
-                    <span>Project M.</span>
+                    <img src={"https://softingart.com/favicon.ico"} alt='Home Logo' title='Home' /> 
+                    <span>Dashboard</span>
                 </Link>
                 <div className="menu-close">
                     <button>

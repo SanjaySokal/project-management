@@ -1,7 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: Inter, sans-serif;
+  font-family: Noto Sans, sans-serif;
+  font-family: Nunito, sans-serif;
+  font-family: Poppins, sans-serif;
+  font-family: Rubik, sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+}
+
+::selection {
+  background-color: #f100fe;
+  color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f100fe;
+}
+
+::-webkit-scrollbar {
+  background: #fff;
+  width: 7px;
 }
 
 .menu {
@@ -31,7 +53,7 @@
 }
 
 .menu .img img {
-  width: 23px;
+  width: 30px;
 }
 
 .menu .img span {
@@ -258,6 +280,108 @@
   font-weight: 500;
 }
 
-.header {
+.header-width {
   flex: 0 0 calc(100% - 250px);
+  overflow: hidden;
+  padding: 0;
+}
+
+.header {
+  height: 85px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.header .header-top-icons {
+  margin-left: auto;
+  display: flex;
+}
+
+.header .header-top-icons .profile {
+  margin-left: auto;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header-top-icons .profile img {
+  width: 45px;
+}
+
+.header .col-md-6 {
+  display: flex;
+  align-items: center;
+}
+
+.header .search-top {
+  padding-left: 25px;
+}
+
+.header .row {
+  align-items: center;
+  height: 100%;
+}
+
+.header .search-top input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 350px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.header .search-top label {
+  background-color: #f3f3f3;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.header .header-top-icons .profile .details {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.header .header-top-icons .profile .details p {
+  margin: 0;
+  padding: 0;
+}
+
+.header .header-top-icons .profile .details .name {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header .header-top-icons .profile .details .location {
+  font-size: 12px;
+  color: #787486;
+  font-weight: 500;
+}
+
+.header-width .content {
+  padding: 50px 30px;
+}
+
+.header-width .content h2.project-name {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  margin: 0 -15px 0 -15px;
+  flex-wrap: wrap;
+}
+
+.list .list-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 0 0 33.3333%;
+}
+
+.list .list-item .list-padding {
+  background-color: #f3f3f3;
+  padding: 15px 20px;
+  border-radius: 15px;
 }
