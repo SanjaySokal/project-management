@@ -368,9 +368,8 @@
 }
 
 .list {
-  margin-top: 50px;
   display: flex;
-  margin: 0 -15px 0 -15px;
+  margin: 50px -15px 0 -15px;
   flex-wrap: wrap;
 }
 
@@ -381,7 +380,144 @@
 }
 
 .list .list-item .list-padding {
-  background-color: #f3f3f3;
+  background-color: #F5F5F5;
   padding: 15px 20px;
   border-radius: 15px;
+}
+
+.list .list-item .list-padding .list-head .heading {
+  justify-content: space-between;
+  display: flex;
+  padding-bottom: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.list .list-item .list-padding li .top-btns p.priority.low {
+  background-color: rgba(223, 168, 116, 0.2);
+  color: #DFA874;
+}
+
+.list .list-item .list-padding li .top-btns p.priority.high {
+  background-color: rgb(216, 114, 125, 0.2);
+  color: #D8727D;
+}
+
+.list .list-item .list-padding li .top-btns p.priority.medium {
+  background-color: rgb(212, 168, 173, 0.2);
+  color: #d4a8ad;
+}
+
+.list .list-item .list-padding li .top-btns p.priority.completed {
+  background-color: rgb(139, 196, 138, 0.2);
+  color: #8BC48A;
+}
+
+/* ToDO */
+.list .list-item .list-padding .list-head.todo .heading {
+  border-bottom: 3px solid #8a2be2;
+}
+
+.list .list-item .list-padding .list-head.todo .heading h4::before {
+  background: #8a2be2;
+}
+
+.list .list-item .list-padding .list-head.todo .heading button {
+  background: rgba(138, 43, 226, 0.5);
+}
+
+/* OnProgress */
+.list .list-item .list-padding .list-head.on-progress .heading {
+  border-bottom: 3px solid #FFA500;
+}
+
+.list .list-item .list-padding .list-head.on-progress .heading h4::before {
+  background: #FFA500;
+}
+
+.list .list-item .list-padding .list-head.on-progress .heading button {
+  background: rgba(255, 165, 0, 0.5);
+}
+
+/* OnProgress */
+.list .list-item .list-padding .list-head.completed .heading {
+  border-bottom: 3px solid #8BC48A;
+}
+
+.list .list-item .list-padding .list-head.completed .heading h4::before {
+  background: #8BC48A;
+}
+
+.list .list-item .list-padding .list-head.completed .heading button {
+  background: rgba(139, 196, 138, 0.5);
+}
+/* task end */
+
+.list .list-item .list-padding .list-head .heading button {
+  display: flex;
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid #787486;
+  font-weight: 800;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 8px;
+}
+
+.list .list-item .list-padding .list-head .heading h4 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.list .list-item .list-padding .list-head .heading h4::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.list .list-item .list-padding li {
+  cursor: pointer;
+  list-style-type: none;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.list .list-item .list-padding li .top-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.list .list-item .list-padding li .top-btns p.priority {
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.list .list-item .list-padding li .top-btns span {
+  cursor: pointer;
+}
+
+.list .list-item .list-padding li p {
+  margin: 0;
+}
+
+.list .list-item .list-padding li .inner-content h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.list .list-item .list-padding li .inner-content p {
+  font-size: 14px;
+  color: #787486;
 }

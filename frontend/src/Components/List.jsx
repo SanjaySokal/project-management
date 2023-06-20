@@ -1,20 +1,14 @@
 import React from 'react'
+import ToDo from './ToDo'
+import OnProgress from './OnProgress'
+import Completed from './Completed'
 
 const List = () => {
     return (
         <div className="list">
-            <div className="list-item">
-                <div className="list-padding">
-                    <div className='todo list-head'>
-                        <div className="heading">
-                            <h4>To Do</h4>
-                            <button>
-                                <i className="fa-solid fa-plus"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ToDo />
+            <OnProgress />
+            <Completed />
         </div>
     )
 }
