@@ -1,19 +1,26 @@
-import React from 'react'
-import { DragDropContext } from "react-beautiful-dnd"
-import ToDo from './ToDo'
-import OnProgress from './OnProgress'
-import Completed from './Completed'
+import React from 'react';
+import { DragDropContext } from 'react-beautiful-dnd';
+import ToDo from './ToDo';
+import OnProgress from './OnProgress';
+import Completed from './Completed';
 
 const List = () => {
+
+    const onDragEnd = (result) => {
+        if (!result.destination) return;
+    };
+
     return (
-        <DragDropContext onDragEnd={() => console.log("ended")}>
-            <div className="list">
+        <div className="list">
+            <DragDropContext
+                onDragEnd={onDragEnd}
+            >
                 <ToDo />
                 <OnProgress />
                 <Completed />
-            </div>
-        </DragDropContext>
-    )
-}
+            </DragDropContext>
+        </div>
+    );
+};
 
-export default List
+export default List;

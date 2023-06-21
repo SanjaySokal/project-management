@@ -1,16 +1,17 @@
-import React from 'react'
-import ItemStatus from './ItemStatus'
+import React from 'react';
+import ItemStatus from './ItemStatus';
 import { Droppable } from 'react-beautiful-dnd';
 
 const OnProgress = () => {
     let arr = [
-        { priority: "low", heading: "Brainstorming", para: "Brainstorming brings team members' diverse experience into play." },
-        { priority: "medium", heading: "Brainstorming", para: "Brainstorming brings team members' diverse experience into play." },
-        { priority: "high", heading: "Brainstorming", para: "Brainstorming brings team members' diverse experience into play." }
+        { priority: 'low', heading: 'Brainstorming', para: "Brainstorming brings team members' diverse experience into play." },
+        { priority: 'medium', heading: 'Brainstorming', para: "Brainstorming brings team members' diverse experience into play." },
+        { priority: 'high', heading: 'Brainstorming', para: "Brainstorming brings team members' diverse experience into play." }
     ];
+
     return (
-        <Droppable droppableId='progress'>
-            {(provided) => {
+        <Droppable droppableId={'progress'} type="progress">
+            {(provided) => (
                 <div className="list-item" ref={provided.innerRef} {...provided.droppableProps}>
                     <div className="list-padding">
                         <div className='on-progress list-head'>
@@ -18,15 +19,15 @@ const OnProgress = () => {
                                 <h4>On Progress</h4>
                             </div>
                         </div>
-                        {
-                            arr.map((item, ind) => <ItemStatus key={ind} id={ind} priority={item.priority} heading={item.heading} para={item.para} />)
-                        }
+                        {arr.map((item, ind) => (
+                            <ItemStatus key={ind} id={ind} priority={item.priority} heading={item.heading} para={item.para} />
+                        ))}
                     </div>
                     {provided.placeholder}
                 </div>
-            }}
+            )}
         </Droppable>
-    )
-}
+    );
+};
 
-export default OnProgress
+export default OnProgress;
