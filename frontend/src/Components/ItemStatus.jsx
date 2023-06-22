@@ -7,7 +7,7 @@ const ItemStatus = (props) => {
     return (
         <Draggable draggableId={"todo" + props.id} index={props.id}>
             {(provided) => (
-                <li ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+                <li draggable ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} onDragStart={() => console.log("Start")} onDragOver={(e) => {e.preventDefault(); console.log("End")}}>
                     <div className="top-btns">
                         <p className={`priority ${props.priority}`}>
                             {props.priority.charAt(0).toUpperCase() + props.priority.slice(1)}
